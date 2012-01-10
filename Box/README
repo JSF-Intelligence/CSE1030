@@ -4,3 +4,10 @@ http://tinyurl.com/JSF-cse1030
 
 in order for BoxDemo.java to use the Box class Box.java must be in a sub-directory
 of the directory that BoxDemo.java is in. That sub-directory must be named "shapes".
+
+WorkingDirectory (directory)
+    BoxDemo.java
+    BoxDemo.class
+    shapes (directory)
+        Box.java
+        Box.class
