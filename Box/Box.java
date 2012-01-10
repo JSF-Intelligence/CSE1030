@@ -45,7 +45,37 @@ public class Box
     }
    
    //accessor methods
-   
+
+   /**
+    * Returns the width of our box.
+    * @return the width of the box
+    */
+    
+   public double get_width()
+   {
+      return this.width;
+   }
+
+   /**
+    * Returns the height of our box.
+    * @return the height of the box
+    */
+    
+   public double get_height()
+   {
+      return this.height;
+   }
+
+   /**
+    * Returns the depth of our box.
+    * @return the depth of the box
+    */
+    
+   public double get_depth()
+   {
+      return this.depth;
+   }
+
    /**
     * Returns the volume of our box.
     * @return the volume of the box
@@ -128,14 +158,3 @@ public class Box
        return;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
