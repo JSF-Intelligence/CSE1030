@@ -1,3 +1,5 @@
+package shapes;
+
 public class Box 
 {
    /**
@@ -43,7 +45,37 @@ public class Box
     }
    
    //accessor methods
-   
+
+   /**
+    * Returns the width of our box.
+    * @return the width of the box
+    */
+    
+   public double get_width()
+   {
+      return this.width;
+   }
+
+   /**
+    * Returns the height of our box.
+    * @return the height of the box
+    */
+    
+   public double get_height()
+   {
+      return this.height;
+   }
+
+   /**
+    * Returns the depth of our box.
+    * @return the depth of the box
+    */
+    
+   public double get_depth()
+   {
+      return this.depth;
+   }
+
    /**
     * Returns the volume of our box.
     * @return the volume of the box
@@ -69,7 +101,9 @@ public class Box
 
    /**
     * Change the height of our box to the given height.
-    * @return true if successful, false otherwise.
+    * The given height should be greater than 0.
+    * @return true if the given height is greater than 0,
+    * returns false otherwise.
     */
 
    public boolean set_height(double height)
@@ -84,17 +118,20 @@ public class Box
 
    /**
     * Change the depth of our box to the given depth.
-    * @throws Exception if the given depth is <= 0
+    * @return true if the given height is greater than 0,
+    * returns false otherwise.
     */
     
-   public void set_depth(double depth) throws Exception
+   public boolean set_depth(double depth) // throws Exception
    {
       if (depth > 0)
       {
          this.depth = depth;
-	 return;
+	 return true;
       }
-      throw new Exception("The given depth must be greater than 0!"); 
+      return false;
+      // I don't know why this works in the constructor but not here?
+      // throw new Exception("The given depth must be greater than 0!"); 
    }
    
    /**
@@ -121,14 +158,3 @@ public class Box
        return;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
